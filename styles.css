@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Assignment 1: RGBA Enhancement */
+
+/* Task 1: Semi-transparent Background */
+.background-fade {
+    background-color: rgba(51, 153, 255, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Task 2: Enhanced Text with Shadow */
+h1, h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Task 3: Interactive RGBA Button */
+.rgba-button {
+    background-color: rgba(46, 204, 113, 0.8);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.rgba-button:hover {
+    background-color: rgba(46, 204, 113, 1);
+}
+
+/* Assignment 2: Animations and Transitions */
+
+/* Task 1: Smooth Link Transitions */
+.smooth-link {
+    color: #f1c40f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.smooth-link:hover {
+    color: #e74c3c;
+}
+
+/* Task 2: Animated Click Button */
+@keyframes buttonClick {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.animated-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.animated-button:active {
+    animation: buttonClick 0.3s ease;
+}
+
+/* Task 3: Rotating Icon */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.rotating-icon {
+    display: inline-block;
+    font-size: 2em;
+    color: white;
+    animation: rotate 2s linear infinite;
+}
+
+/* Additional Styles */
+.section {
+    margin: 40px 0;
+    padding: 20px;
+    width: 100%;
+}
+
+p {
+    color: white;
+    line-height: 1.6;
+}
+
+.task-label {
+    color: #f1c40f;
+    font-size: 0.9em;
+    margin: 20px 0 10px;
+    font-style: italic;
+}
